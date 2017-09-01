@@ -1,0 +1,15 @@
+.page-button{
+  width: 6.44rem;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  background: #ff913d;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  position: absolute;
+  bottom: 1.28rem;
+  left: 50%;
+  margin-left: -3.22rem;
+  cursor: pointer;
+}

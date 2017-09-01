@@ -1,0 +1,127 @@
+/**
+ * 认证中心css样式
+ */
+.warpper {
+  background: #fff;
+}
+.page-logo {
+  width: 100%;
+}
+.bormo_banner {
+  width: 100%;
+  height: 3.6rem;
+  background-size: 100%;
+}
+.bormo_jine {
+  padding-left: 0.38rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  color: #000000;
+}
+.page-header {
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 2px solid #ededed;
+}
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.29rem;
+  color: #656566;
+  line-height: 0.94rem;
+  float: left;
+}
+.page-header .page-submit {
+  width: 1.24rem;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  text-align: center;
+  font-size: 0.28rem;
+  float: right;
+  color: #656566;
+  margin: 0.18rem 0.54rem 0.18rem 0;
+  border-radius: 0.05rem;
+  cursor: pointer;
+}
+.auth_headerms1 {
+  font-size: 0.29rem;
+  color: #000000;
+  line-height: 0.88rem;
+  float: left;
+  padding-left: 0.16rem;
+}
+.auth_ul {
+  width: 100%;
+}
+.auth_li {
+  width: 100%;
+  border-bottom: 0.02rem solid #ddd;
+  padding-bottom: 0.28rem;
+  clear: both;
+  display: block;
+}
+.auth_img01 {
+  width: 0.63rem;
+  height: 0.63rem;
+  display: block;
+  float: left;
+  padding-left: 0.4rem;
+  padding-top: 0.28rem;
+  font-size: 0.26rem;
+}
+.auth_ms01 {
+  font-size: 0.28rem;
+  color: #646464;
+  float: left;
+  /* width: 1.5rem;
+  max-width: 1.5rem; */
+  padding-left: 0.2rem;
+  padding-top: 0.4rem;
+}
+.auth_ms02 {
+  width: 1.16rem;
+  height: 0.33rem;
+  line-height: 0.33rem;
+  font-size: 0.21rem;
+  color: #fff;
+  float: right;
+  border-radius: 0.4rem;
+  text-align: center;
+  margin-right: 0.46rem;
+  margin-top: 0.49rem;
+  background: #c9c9c9;
+}
+.auth_img02 {
+  width: 0.14rem;
+  height: 0.22rem;
+  display: block;
+  background: url(../img/authcenter02.png) no-repeat;
+  background-size: 100%;
+  float: right;
+  margin-right: 0.49rem;
+  margin-top: 0.57rem;
+}
+.auth_button01 {
+  width: 6.43rem;
+  height: 0.77rem;
+  text-align: center;
+  line-height: 0.77rem;
+  background: #c9c9c9;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+  font-size: 0.29rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+.auth_button01.active{
+  background: #fe8e3a;
+}
+.auth_active {
+  background: #fe8e3a;
+}

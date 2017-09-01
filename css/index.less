@@ -1,0 +1,189 @@
+/**
+ * 登录注册页css样式
+ */
+@bili:100rem;
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.page-logo{
+	width: 100%;
+}
+.page-profit{
+	width: 100%;
+	height: 146/@bili;
+	background: #fff;
+	.profit-list{
+		width: 120/@bili;
+		height: 146/@bili;	
+		float: left;
+		margin: 0 0 0 100/@bili;
+		text-align: center;
+		span{
+		    display: block;
+		    margin: 0 auto;
+		}
+		.yjsx-icon{
+		    width: 52/@bili;
+		    height: 64/@bili;
+		    background: url('../img/icon_yjsx.png') no-repeat center;
+		    background-size: 100%;
+		}
+		.kssq-icon{
+		    width: 56/@bili;
+            height: 64/@bili;
+		    background: url('../img/icon_kssq.png') no-repeat center;
+		    background-size: 100%;
+		}
+		.cdll-icon{
+		    width: 64/@bili;
+            height: 64/@bili;
+		    background: url('../img/icon_cdll.png') no-repeat center;
+		    background-size: 100%;
+		}
+		em{
+		    height: 40/@bili;
+		    line-height: 40/@bili;
+		    display: block;
+		    font-size: 24/@bili;
+		    color: #656566;
+		}
+	}
+}
+.page-form{
+    width: 100%;
+    margin-top: 20/@bili;
+    background: #fff;
+    .form-group{
+        width: 644/@bili;
+        margin: 0 auto;
+        margin-bottom: 32/@bili;
+        input{
+            width: 300/@bili;
+            height: 45/@bili;
+            line-height: 45/@bili;
+            border: none;
+            outline: 0;
+            font-size: 30/@bili;
+            color: #656566;
+        }
+        .phone-group{
+            width: 600/@bili;
+            height: 46/@bili;
+            padding: 20/@bili;
+            border: 1px solid #BBBBBB;
+            margin: 0 auto;
+            border-radius: 5/@bili;
+            .iphone-icon{
+                width: 33/@bili;
+                height: 45/@bili;
+                background: url('../img/icon_phone.png') no-repeat center;
+                background-size: 100%;
+                float: left;
+                margin-right: 46/@bili;
+            }
+        }
+        .code-group{
+            width: 398/@bili;
+            height: 46/@bili;
+            padding: 20/@bili;
+            border: 1px solid #BBBBBB;
+            border-radius: 5/@bili;
+            float: left;
+            .msg-icon{
+                width: 46/@bili;
+                height: 33/@bili;
+                background: url('../img/icon_msg.png') no-repeat center;
+                background-size: 100%;
+                float: left;
+                margin-right: 33/@bili;
+                margin-top: 6/@bili;
+            }
+        }
+        .form-code{
+            width: 180/@bili;
+            height: 90/@bili;
+            line-height: 90/@bili;
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            border-radius: 5/@bili;
+            vertical-align: bottom;
+            background: #ff913d;
+            margin-left: 20/@bili;
+            font-size: 28/@bili;
+            cursor: pointer;
+            &.active{
+                background: #c9c9c9;
+                color: #FFFFFF;
+                
+            }
+        }
+    }
+    .login-button{
+        width: 644/@bili;
+        height: 78/@bili;
+        line-height: 78/@bili;
+        background: #ff913d;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto;
+        margin-top: 60/@bili;
+        border-radius: 10/@bili;
+        font-size: 30/@bili;
+        cursor: pointer;
+        display: block;
+        border: none;
+    }
+    .form-agree{
+        width: 100%;
+        text-align: center;
+        margin-top: 22/@bili;
+        #checked{
+          display: none;
+        }
+        #checked + label:before{
+            content: '';
+            width: 30/@bili;
+            height: 30/@bili;
+            background: url(../img/checkbox.png);
+            background-size: 100%;
+            border: none;
+            display: inline-block;
+            margin-right: 10/@bili;
+            vertical-align: -6/@bili;
+            background-position: 0 30/@bili;
+        }
+        #checked:checked+label:before{
+            content: '';
+            width: 30/@bili;
+            height: 30/@bili;
+            display: inline-block;
+            background: url(../img/checkbox.png);
+            background-size: 100%;
+            vertical-align: -6/@bili;
+            background-position: 0 0; 
+        }
+        .select-text{
+            color: #656566;
+            font-size: 24/@bili;
+        }
+        a{
+            color: #ff913d;
+            font-size: 24/@bili;
+        }    
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 35/@bili;
+    p{
+        height: 50/@bili;
+        line-height: 50/@bili;
+        color: #9b9b9b;
+        font-size: 22/@bili;
+    }
+}

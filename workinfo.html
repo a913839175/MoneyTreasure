@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>工作信息</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="工作信息" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/workinfo.css" />
+		<link rel="stylesheet" href="css/iosSelect.css">
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-header clearfix">
+						<a href="authcenter.html" class="page-back"></a>
+						<p class="page-title">工作信息</p >
+						<p class="page-submit submit-btn">提交</p>
+						<p class="page-submit change">修改</p >
+				</div>
+				<form class="registerform" method = 'post'>
+				<div class="page-form">
+					<div class="form-group clearfix">
+						<p class="form-laber">工作单位</p>
+						<input type="text" placeholder='如：上海星融财富投资顾问股份有限公司' name="unit" class="form-input" id='WorkUnit' maxlength="20"/>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber">职务名称</p>
+						<input type="text" placeholder='如：医生' name="zhuwu" datatype="zw2-10" errormsg="职务名称至少2个字符,最多10个中文字符！" class="form-input" id='JobTitle' />
+					</div>
+					<div class="form-group clearfix" id='time'>
+						<p class="work-limit">本单位工作年限</p>
+						<span class="time-show" id='WorkTime'></span>
+						<span class="form-icon"></span>
+					</div>
+					<div class="form-group clearfix" id='aftertx'>
+						<p class="work-limit">税后年收入</p>
+						<span class="time-show1" id='Income'></span>
+						<span class="form-icon"></span>
+					</div>
+					<div class="form-group clearfix" id="city" >
+						<p class="form-laber">单位所在地</p>
+				        <span data-city-code="510100" data-province-code="510000" data-district-code="510105" class="city-show" id='WorkCity'></span> 
+						<span class="form-icon"></span>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber">详细地址</p>
+						<input type="text" placeholder='如：下沙5坊' name="address" datatype="zw4-30" errormsg="详细地址至少4个字符,最多30个中文字符！" class="form-input" id="DetailedAddress" maxlength="30"/>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber">单位电话</p>
+						<input type="text" maxlength="22" placeholder='（选填）如：0755-1545234' class="form-input" id="phone"  />
+					</div>
+					<p class="page-button">下一步</p>
+					<div class="footer">
+						<p class="tips">温馨提示</p>
+						<p>1. 保证隐私安全，不会与您所在单位联系</p>
+						<p>2. 请根据您实际情况如实填写</p>	
+					</div>				
+			</div>
+		</form>
+		</div>
+		</div>
+		<script src="js/lib/utils.js"></script>
+		<script src="js/lib/ajax.js"></script>
+		<script src="js/lib/iscroll.js"></script>
+		<script src="js/lib/jsonData.js"></script>
+		<script src="js/lib/iosSelect.js"></script>
+		<script src="js/page/workinfo.js"></script>
+		<script src="js/lib/jquery-1.11.1.min.js"></script>
+		<script src="js/lib/Validform_v5.3.2_min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var ALERT = function(msg){
+					util.toast(msg)
+				}
+				var fm = $('form').Validform({
+						tiptype:function(msg,o){
+								if(o.type == 3){
+										ALERT(msg)
+								}
+						},
+						datatype:{
+								"zh1-6":/^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/,
+								"zw1-6":/^[\a-zA-Z0-9\u4e00-\u9fa5]{1,6}$/g
+						}
+				});
+				fm.addRule([
+						{
+							ele:"input[name='unit']",
+							datatype:"zw4-30"
+						},
+						{
+							ele:"input[name='zhuwu']",
+							datatype:"zw2-10"
+						},
+						{
+							ele:"input[name='address']",
+							datatype:"zw4-30"
+						}
+				])
+		})
+		</script>
+	</body>
+</html>
+

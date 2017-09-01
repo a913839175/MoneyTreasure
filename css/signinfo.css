@@ -1,0 +1,111 @@
+/**
+ * 签约信息css样式
+ */
+.warpper {
+  background: #fff;
+  height: auto;
+}
+.bormo_banner {
+  width: 100%;
+  height: 3.6rem;
+  background-size: 100%;
+}
+.auth_div04 {
+  width: 6.74rem;
+  height: 1rem;
+  border: 0.02rem solid #bbbbbb;
+  font-size: 0.28rem;
+  line-height: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.9rem;
+}
+.bormo_jine {
+  padding-left: 0.38rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  color: #000000;
+}
+.page-header {
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 2px solid #ededed;
+}
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.29rem;
+  color: #656566;
+  line-height: 0.94rem;
+  float: left;
+}
+.page-header .page-submit {
+  width: 1.24rem;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  text-align: center;
+  font-size: 0.28rem;
+  float: right;
+  background: #5897f6;
+  color: #fff;
+  margin: 0.18rem 0.54rem 0.18rem 0;
+  border-radius: 0.05rem;
+  cursor: pointer;
+}
+.page-form {
+  width: 100%;
+  margin-top: 0.18rem;
+}
+.page-form .form-weizhi {
+  width: 100%;
+  border-bottom: 1px solid #bbbbbb;
+}
+.page-form .form-weizhi .form-group {
+  width: 6.72rem;
+  margin: 0 auto;
+  height: 1.18rem;
+  line-height: 1.18rem;
+}
+.page-form .form-weizhi .form-group .form-laber {
+  float: left;
+  height: 0.64rem;
+  line-height: 1.18rem;
+  font-size: 0.28rem;
+  color: #676768;
+}
+.page-form .form-weizhi .form-group .form-zt {
+  float: right;
+  font-size: 0.28rem;
+  height: 0.64rem;
+  line-height: 1.18rem;
+  padding-right: 0.18rem;
+  color: red;
+}
+.page-form .form-weizhi .form-group .auth_img02 {
+  width: 0.14rem;
+  height: 0.22rem;
+  display: block;
+  background: url(../img/authcenter02.png) no-repeat;
+  background-size: 100%;
+  float: right;
+  margin-top: 0.47rem;
+}
+.page-button {
+  width: 6.44rem;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  background: #ff913d;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  cursor: pointer;
+}

@@ -1,0 +1,83 @@
+/**
+ * 已通过css样式
+ */
+.warpper {
+  background: #fff;
+  height: auto;
+}
+.bormo_banner {
+  width: 100%;
+  height: 3.6rem;
+  background-size: 100%;
+}
+.auth_div04 {
+  width: 6.74rem;
+  height: 1rem;
+  border: 0.02rem solid #bbbbbb;
+  font-size: 0.28rem;
+  line-height: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.9rem;
+}
+.bormo_jine {
+  padding-left: 0.38rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  color: #000000;
+}
+.page-header {
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 2px solid #ededed;
+  background: #fff;
+}
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.29rem;
+  color: #656566;
+  line-height: 0.94rem;
+  float: left;
+}
+.pass01 {
+  width: 4.01rem;
+  height: 4.01rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.57rem;
+  margin-bottom: 0.75rem;
+}
+.pass02 {
+  color: #000;
+  text-align: center;
+  font-size: 0.36rem;
+}
+.pass03 {
+  color: #a6a6a6;
+  font-size: 0.29rem;
+  padding-top: 0.3rem;
+  width: 6.3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.page-button {
+  width: 6.44rem;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  background: #ff913d;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  cursor: pointer;
+  display: block;
+}

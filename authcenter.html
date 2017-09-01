@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>星融h5-认证中心</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="星融h5-认证中心" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/authcenter.css" />	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-logo">
+					<div class="page-header clearfix">
+						<a href="borrowmain.html" class="page-back"></a>
+						<p class="page-title">认证中心</p >
+					</div>
+					<div class="auth_ul">
+						<a href="authident.html" class="auth_li clearfix">
+							<img src="img/authcenter03.png" class="auth_img01"/>
+							<p class="auth_ms01">身份认证</p>
+							<span class="auth_img02"></span>
+							<p class="auth_ms02 auth_active" id="identity">已填写</p>
+						</a>
+						<a href="workinfo.html" class="auth_li clearfix">
+							<img src="img/authcenter04.png" class="auth_img01"/>
+							<p class="auth_ms01">工作信息</p>
+							<span class="auth_img02"></span>
+							<p class="auth_ms02" id="workinfo">未填写</p>
+						</a>
+						<a href="personinfo.html" class="auth_li clearfix">
+							<img src="img/authcenter05.png" class="auth_img01"/>
+							<p class="auth_ms01">个人信息</p>
+							<span class="auth_img02"></span>
+							<p class="auth_ms02" id="personal">未填写</p>
+						</a>
+						<a href="interpersonal.html" class="auth_li clearfix">
+							<img src="img/authcenter06.png" class="auth_img01"/>
+							<p class="auth_ms01">人际关系</p>
+							<span class="auth_img02"></span>
+							<p class="auth_ms02" id="interpersonal">未填写</p>
+						</a>
+						<a href="authcredit.html" class="auth_li clearfix">
+							<img src="img/authcenter07.png" class="auth_img01"/>
+							<p class="auth_ms01">信用认证</p>
+							<span class="auth_img02"></span>
+							<p class="auth_ms02 auth_active" id="credit">已认证</p>
+						</a>
+						<a href="javascript:void(0);" id="bankhref" class="auth_li clearfix">
+							<img src="img/authcenter08.png" class="auth_img01"/>
+							<p class="auth_ms01">银行卡信息</p>
+							<span class="auth_img02"></span>
+							<p class="auth_ms02" id="bankinfo">未填写</p>
+						</a>
+					</div>
+					<div class="auth_button01" id="button">立即借款</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/lib/utils.js"></script>
+		<script src="js/lib/ajax.js"></script>
+		<script src="js/page/authcenter.js"></script>
+		<script>
+					function reurl(){
+							url = location.href; //把当前页面的地址赋给变量 url
+							var times = url.split("?"); //分切变量 url 分隔符号为 "?"
+							if(times[1] != 1){ //如果?后的值不等于1表示没有刷新
+							url += "?1"; //把变量 url 的值加入 ?1
+							self.location.replace(url); //刷新页面
+							}
+					}
+
+					reurl();//执行这个函数
+		</script>
+	</body>
+</html>

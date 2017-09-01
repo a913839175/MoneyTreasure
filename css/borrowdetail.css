@@ -1,0 +1,108 @@
+/**
+ * 借款详情页css样式
+ */
+.warpper {
+  background: #fff;
+}
+.bormo_banner {
+  width: 100%;
+  height: 3.6rem;
+  background-size: 100%;
+}
+.auth_div04 {
+  width: 6.74rem;
+  height: 1rem;
+  border: 0.02rem solid #bbbbbb;
+  font-size: 0.28rem;
+  line-height: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.9rem;
+}
+.bormo_jine {
+  padding-left: 0.38rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  color: #000000;
+}
+.page-header {
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 2px solid #ededed;
+  background: #fff;
+}
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.29rem;
+  color: #656566;
+  line-height: 0.94rem;
+  float: left;
+}
+.page-form {
+  width: 100%;
+  height: 2.7rem;
+  background: #fff;
+}
+.page-form .form-group {
+  width: 6.72rem;
+  margin: 0 auto;
+}
+.page-form .form-group .form-wz {
+  padding-top: 0.54rem;
+  font-size: 0.32rem;
+  text-align: center;
+  color: #676768;
+}
+.page-form .form-group .form-money {
+  font-size: 0.78rem;
+  text-align: center;
+  color: #fe8e3a;
+  font-weight: 700;
+}
+.form-group2 .form_li {
+  width: 6.72rem;
+  margin: 0 auto;
+  height: 0.77rem;
+  line-height: 0.77rem;
+  color: #878787;
+}
+.form-group2 .form_li:first-child {
+  margin-top: 0.15rem;
+}
+.form-group2 .form-bt2 {
+  float: left;
+  color: #878787;
+}
+.form-group2 .form-bt3 {
+  float: right;
+  color: #878787;
+}
+.form-group2 .form-bt4 {
+  float: right;
+  display: block;
+  color: red;
+}
+.kongxi {
+  width: 100%;
+  height: 0.21rem;
+  background: #f6f6f6;
+}
+.form-bt {
+  font-size: 0.28rem;
+  width: 100%;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  border-bottom: 1px solid #dddddd;
+  color: #878787;
+}
+.form-bt p {
+  width: 6.72rem;
+  margin: 0 auto;
+}

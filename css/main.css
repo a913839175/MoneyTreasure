@@ -1,0 +1,114 @@
+/**
+ * 首页css样式
+ */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background: #f6f6f6;
+}
+.page-logo {
+  width: 100%;
+  min-height: 100% ;
+  background: #f6f6f6;
+}
+.main_banner {
+  width: 100%;
+  height: 2.7rem;
+  background-size: 100%;
+  overflow: hidden;
+}
+.point_ul {
+  width: 100%;
+  border-bottom: 0.01rem solid #bbbbbb;
+  background: #FFFFFF;
+}
+.point_li {
+  float: left;
+  padding-top: 0.25rem;
+  width: 33%;
+  padding-bottom: 0.27rem;
+}
+.point_img01 {
+  width: 0.84rem;
+  height: 0.84rem;
+  display: block;
+  margin: 0 auto;
+}
+.point_ms01 {
+  padding-top: 0.16rem;
+  font-size: 0.24rem;
+  color: #000000;
+  text-align: center;
+}
+.mian_wz {
+  width: 100%;
+  height: 1.92rem;
+  background: #FFFFFF;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+.mian_product {
+  width: 6.42rem;
+  height: 1.92rem;
+  margin: 0 auto;
+}
+.product_img01 {
+  width: 0.78rem;
+  height: 0.83rem;
+  display: block;
+  float: left;
+  margin-top: 0.52rem;
+}
+.product_ms1 {
+  float: left;
+  margin-top: 0.54rem;
+  margin-left: 0.57rem;
+}
+.product_ms2 {
+  font-size: 0.31rem;
+  color: #5d5d5d;
+}
+.product_ms3 {
+  font-size: 0.24rem;
+  color: #656566;
+  padding-top: 0.08rem;
+}
+.product_ms01 {
+  font-size: 0.4rem;
+}
+.product_lj01 {
+  float: right;
+  display: block;
+}
+.product_img02 {
+  width: 0.14rem;
+  height: 0.22rem;
+  display: block;
+  padding-top: 0.87rem;
+}
+.end {
+  width: 100%;
+  max-width: 640px;
+  position: fixed;
+  bottom: 0.67rem;
+  margin: 0 auto;
+}
+.xian {
+  width: 1.11rem;
+  height: 0.02rem;
+  background: #dcdcdc;
+  float: left;
+  margin-top: 0.17rem;
+}
+.endms {
+  float: left;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  color: #b5b5b5;
+  font-size: 0.28rem;
+}
+.endwz {
+  width: 5.54rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,120 @@
+/**
+ * 个人中心css样式
+ */
+.warpper {
+  background: #f6f6f6;
+}
+.page-header {
+  background: url(../img/page_bg.jpg) no-repeat center;
+  width: 100%;
+  /* height: 3.3rem; */
+  background-size: 100%;
+}
+
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.29rem;
+  color: #656566;
+  line-height: 0.94rem;
+  float: left;
+}
+.page-header .user-info {
+  width: 2rem;
+  height: 2.7rem;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-size: 0.3rem;
+  padding-top: 0.6rem;
+}
+.page-header .user-info .avatar-bg {
+  background: url('../img/avatar_bg.png') no-repeat center;
+  background-size: 100%;
+  width: 1.48rem;
+  height: 1.48rem;
+  margin: 0 auto;
+}
+.page-header .user-info .user-avatar {
+  width: 1.28rem;
+  height: 1.28rem;
+  margin: 0 auto;
+  padding-top: 0.1rem;
+}
+.page-header .user-info .user-name {
+  margin-top: 0.2rem;
+}
+.page-link {
+  background: #fff;
+  padding: 0 0.54rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  color: #878787;
+  font-size: 0.3rem;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+.page-link .about-icon {
+  display: inline-block;
+  background: url(../img/about.png) no-repeat center;
+  width: 0.7rem;
+  height: 0.88rem;
+  background-size: 100%;
+  float: left;
+}
+.page-link .problem-icon {
+  display: inline-block;
+  background: url(../img/problem.png) no-repeat center;
+  width: 0.7rem;
+  height: 0.88rem;
+  background-size: 100%;
+  float: left;
+}
+.page-link .advice-icon {
+  display: inline-block;
+  background: url(../img/advice.png) no-repeat center;
+  width: 0.7rem;
+  height: 0.88rem;
+  background-size: 100%;
+  float: left;
+}
+.page-link .advice-msg {
+  float: right;
+}
+.page-link .msg-icon {
+  background: #f96650;
+  color: #fff;
+  padding: 0 0.2rem;
+  border-radius: 48%;
+  margin-right: 0.2rem;
+}
+.page-link .i-icon {
+  width: 0.14rem;
+  height: 0.22rem;
+  display: block;
+  background: url(../img/authcenter02.png) no-repeat;
+  background-size: 100%;
+  float: right;
+  margin-right: 0.1rem;
+  margin-top: 0.35rem;
+}
+.page-button {
+  width: 6.44rem;
+  height: 0.78rem;
+  margin: 1.5rem auto;
+  line-height: 0.78rem;
+  background: #ff913d;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  cursor: pointer;
+  display: block;
+  border: none;
+}

@@ -1,0 +1,199 @@
+/**
+ * 工作信息页css样式
+ */
+.warpper {
+  width: 100%;
+  height: auto;
+}
+.bormo_banner {
+  width: 100%;
+  height: 3.6rem;
+  background-size: 100%;
+}
+.bormo_jine {
+  padding-left: 0.38rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  color: #000000;
+}
+.page-header {
+  width: 100%;
+  height: 0.9rem;
+}
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.28rem;
+  color: #000000;
+  line-height: 0.9rem;
+  float: left;
+}
+.page-header .page-submit {
+  width: 1rem;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  text-align: center;
+  font-size: 0.28rem;
+  float: right;
+  color: #656566;
+  margin: 0.18rem 0.54rem 0.18rem 0;
+  border-radius: 0.05rem;
+  cursor: pointer;
+}
+.page-header .change {
+  margin: 0.18rem 0 0.18rem 0;
+  cursor: pointer;
+  display: none
+}
+.page-form {
+  width: 100%;
+  margin-top: 0.18rem;
+}
+.page-form .form-group {
+  width: 6.72rem;
+  margin: 0 auto;
+  border-bottom: 0.02rem solid #bbbbbb;
+  height: 1.18rem;
+  line-height: 1.18rem;
+}
+.page-form .form-group .form-laber {
+  float: left;
+  height: 0.64rem;
+  line-height: 1.18rem;
+  font-size: 0.27rem;
+  width: 1.6rem;
+}
+.page-form .form-group .form-input {
+  width: 5.12rem;
+  float: left;
+  border: none;
+  outline: none;
+  height: 0.64rem;
+  font-size: 0.27rem;
+  overflow: hidden;
+  display: block;
+  font-size: 0.28rem;
+  margin-top: 0.27rem;
+}
+.page-form .form-group .work-limit {
+  float: left;
+  height: 0.64rem;
+  line-height: 1.18rem;
+  font-size: 0.28rem;
+  width: 2rem;
+  margin-right: 0.22rem;
+}
+.page-form .form-group .form-select {
+  width: 4.46rem;
+  height: 0.7rem;
+  border: 1px solid #bbbbbb;
+  float: left;
+  border-radius: 0.1rem;
+}
+.page-form .form-group .form-select select {
+  width: 4.46rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding-left: 0.2rem;
+  color: inherit;
+  border: none;
+  border-radius: inherit;
+  outline: none;
+  background: inherit;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  background: url('../img/arrow.png') no-repeat scroll right center transparent;
+  background-position-x: 4.08rem;
+}
+.auth_div03 {
+  width: 6.72rem;
+  margin-top: 0.28rem;
+  margin-bottom: 0.8rem;
+}
+.auth_ms02 {
+  float: left;
+}
+.auth_ms03 {
+  text-align: center;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+}
+.auth_img01 {
+  float: left;
+  display: block;
+  width: 5.12rem;
+  height: 2.4rem;
+  padding-left: 0.2rem;
+}
+.auth_div04 {
+  width: 6.74rem;
+  height: 1rem;
+  border: 0.02rem solid #bbbbbb;
+  font-size: 0.28rem;
+  line-height: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.9rem;
+}
+.mart76 {
+  margin-top: 0.76rem;
+}
+.form-icon {
+  width: 0.14rem;
+  height: 0.22rem;
+  display: block;
+  background: url(../img/authcenter02.png) no-repeat;
+  background-size: 100%;
+  float: right;
+  margin-right: 0.05rem;
+  margin-top: 0.57rem;
+}
+.city-show {
+  max-width: 4rem;
+  height: 1.18rem;
+  line-height: 1.18rem;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+.page-button {
+  width: 6.44rem;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  background: #ff913d;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  color: #9b9b9b;
+  text-align: center;
+  margin-top: 0.36rem;
+  margin-bottom: 0.5rem;
+}
+.footer .tips {
+  margin-bottom: 0.1rem;
+}
+.footer p {
+  height: 0.34rem;
+  line-height: 0.34rem;
+  font-size: 0.22rem;
+}
+.marb66 {
+  margin-bottom: 0.66rem;
+}

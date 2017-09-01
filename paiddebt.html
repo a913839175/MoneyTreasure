@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>已还清</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="已还清" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/paiddebt.css" />	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-header clearfix">
+						<a href="javascript:history.go(-1);" class="page-back"></a>
+						<p class="page-title">还款详情页</p >
+				</div>
+				<div class="page-form">
+					<div class="form-group clearfix">
+						<div class="form-wz clearfix">
+							<div class="form-wzweizhi">
+								<img src="img/paiddebt01.png" class="form-wzimg01"/>
+								<p>已还清</p>
+							</div>
+						</div>
+						<p class="form-money">00</p>
+						<div class="periods">
+							<span class="product-name">---</span>
+							<span class="periods02">第1期/共1期</span>
+						</div>
+					</div>	
+				</div>
+				<div class="kongxi"></div>
+				<div class="form-bt">
+					<p>还款明细</p>
+				</div>
+				<ul class="form-group2">	
+					<li class="form_li clearfix">
+						<p class="form-bt2">借款金额</p>
+						<p class="form-bt3 apply-money">0.00</p>
+					</li>
+					<li class="form_li clearfix">
+						<p class="form-bt2">借款时间</p>
+						<p class="form-bt3 apply-time">0000-00-00 00:00</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/lib/utils.js"></script>
+		<script src="js/lib/ajax.js"></script>
+		<script>
+			$(function(){
+				var id = getQueryString("contractid");
+				var status = getQueryString("status");
+					var repay = {
+							url:'/contract/detailed',
+							data:{ 
+									contractid: id,
+									status: status
+							},
+							success: function(res){
+									if(res.code == 1){
+											var money = res.data.money;
+											var listmoney = res.data.apply_money;
+											var time = res.data.loan_complete_time;
+											$(".form-money,.countmoney").html(money);
+											$(".product-name").html(res.data.product_name);
+											$(".time").html(time);
+											$(".apply-money").html(listmoney);
+											$(".apply-time").html(time);
+									}
+							}
+					}
+					sendRequest('post',repay);
+					// 获取地址栏参数
+					function getQueryString(name) {
+							var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+							var r = window.location.search.substr(1).match(reg);
+							if (r != null) {
+											return unescape(r[2]);
+							}
+							return null;
+					}
+					// 时间戳转换
+					function getDate(tm){ 
+            var tt=new Date(parseInt(tm) * 1000).toLocaleString().replace(/年|月/g, "/").replace(/日/g, " ") 
+            return tt; 
+          }
+			})
+		</script>
+	</body>
+</html>

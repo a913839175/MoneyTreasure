@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>人际关系</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="人际关系" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/iosSelect.css"/>
+		<link rel="stylesheet" href="css/interpersonal.css" />	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-header clearfix">
+					<a href="authcenter.html" class="page-back"></a>
+					<p class="page-title">人际关系</p >
+					<p class="page-submit submit-btn">提交</p >
+					<p class="page-submit change">修改</p >
+				</div>
+				<form method="post">
+				<div class="page-form">
+					<div class="form-group clearfix select">
+						<p class="form-laber">与本人关系</p>
+						<span class="form-show" id='RelationOne'></span>
+						<span class="form-icon"></span>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber" >姓名</p>
+						<input type="text" name="NameOne" id='NameOne' datatype="zh2-4" errormsg="姓名至少2个字符,最多4个中文字符！"  placeholder='张三' class="form-input"  maxlength="6"/>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber">电话</p>
+						<input type="tel" name="PhoneOne" id='PhoneOne' class="form-input" maxlength="11"/>
+					</div>
+				</div>
+				
+				<div class="page-form">
+					<div class="form-group clearfix select2">
+						<p class="form-laber">与本人关系</p>
+						<span class="form-show" id='RelationTwo'></span>
+						<span class="form-icon"></span>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber">姓名</p>
+						<input type="text" name="NameTwo" id='NameTwo' placeholder='张三' datatype="zh2-4" errormsg="姓名至少2个字符,最多4个中文字符！" class="form-input"  maxlength="6"/>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber">电话</p>
+						<input type="tel" name="PhoneTwo" id='PhoneTwo' class="form-input" maxlength="11" />
+					</div>
+				</div>
+				</form>
+				<p class="page-button">下一步</p>
+				<div class="footer">
+					<p class="tips">温馨提示</p>
+					<p>1、本平台不会电话审核，请放心填写</p>
+					<p>2、信息需真实有效，否则将导致借款失败</p>	
+				</div>			
+			</div>
+		</div>
+		<script src="js/lib/iscroll.js"></script>
+		<script src="js/lib/jsonData.js"></script>
+		<script src="js/lib/iosSelect.js"></script>
+		<script src="js/lib/utils.js"></script>
+		<script src="js/lib/ajax.js"></script>
+		<script src="js/page/interpersonal.js"></script>
+		<script src="js/lib/jquery-1.11.1.min.js"></script>
+		<script src="js/lib/Validform_v5.3.2_min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var ALERT = function(msg){
+					util.toast(msg)
+				}
+				var fm = $('form').Validform({
+						tiptype:function(msg,o){
+								if(o.type == 3){
+										ALERT(msg)
+								}
+						},
+						datatype:{
+								"zh1-6":/^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/,
+						},
+				});
+				fm.addRule([
+						{
+							ele:"input[name='NameOne']",
+							datatype:"zh2-4"
+						},
+						{
+							ele:"input[name='NameTwo']",
+							datatype:"zh2-4"
+						}
+				])
+		})
+		</script>
+	</body>
+</html>

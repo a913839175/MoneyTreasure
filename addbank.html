@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>添加银行卡</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="查询银行卡" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/iosSelect.css"/>
+		<link rel="stylesheet" href="css/checkbank.css" />	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-header clearfix">
+					<a href="javascript:history.go(-1);" class="page-back"></a>
+					<p class="page-title">银行卡信息</p>
+					<p class="page-submit">提交</p>
+				</div>
+				<div class="page-form">
+					<div class="form-group clearfix">
+						<p class="form-laber">开户者名字</p>
+						<input type="text" maxlength="10" placeholder='' class="form-input" id="name"/>
+					</div>				
+					<div class="form-group clearfix">
+						<p class="form-laber">身份证号</p>
+						<input type="text" maxlength="22" placeholder='' class="form-input" id="card"/>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber">银行卡号</p>
+						<input type="tel" maxlength="22" placeholder='' class="form-input" id="bankno"/>
+					</div>
+					<div class="form-group clearfix select">
+						<p class="form-laber">所属银行</p>
+						<span class="form-show" id="belongs" ></span>
+						<span class="form-icon"></span>
+					</div>
+					<div class="form-group clearfix select1">
+						<p class="form-laber">银行卡开户地</p>
+						<span class="form-show" id="address" ></span>
+						<span class="form-icon"></span>
+					</div>
+					<div class="form-group clearfix">
+						<p class="form-laber">银行预留手机号</p>
+						<input type="tel" maxlength="15" placeholder='' class="form-input" id="phone" />
+					</div>
+					<div class="form-group clearfix">
+						<p class='form-laber'>请输入短信验证码</p>
+						<input type="text" maxlength="10" placeholder='' class="code-input"  id="code" />
+						<div class="form-code">获取验证码</div>
+					</div>
+					<p class="page-button" id="nextbtn">提交</p>
+					<div class="footer">
+						<p class="tips">温馨提示</p>
+						<p>1. 放款使用，需填写本人名下有效银行卡</p>
+						<p>2. 请确保银行预留手机号码正确</p>	
+					</div>						
+				</div>
+			</div>
+		</div>
+		<script src="js/lib/iscroll.js"></script>
+		<script src="js/lib/jsonData.js"></script>
+		<script src="js/lib/iosSelect.js"></script>
+		<script src="js/lib/ajax.js"></script>
+		<script src="js/page/addbank.js"></script>
+		<script src="js/lib/utils.js"></script>
+	</body>
+</html>

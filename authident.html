@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>星融h5-身份认证</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="星融h5-身份认证" />
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/iosSelect.css"/>
+		<link rel="stylesheet" href="css/authident.css" />	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-header clearfix">
+					<a href="authcenter.html" class="page-back"></a>
+					<p class="page-title">身份认证</p>
+					<a href="authcenter.html" class="page-submit" id="page-submit">提交</a>
+				</div>
+				<form id="formid" name="authidentForm" method = 'post'  action = ''>
+				<div class="page-form">
+					<div class="form-group clearfix">
+						<p class="form-laber">您的姓名</p>
+						<input type="text" maxlength="6" placeholder='身份者姓名' name="name" class="form-input" id='IdentityName'/>
+					</div>				
+					<div class="form-group clearfix" id="selectDate">
+						<p class="form-laber">身份有效期</p>
+						<!--<input type="text" readonly placeholder='如：2020-5-1' class="form-input" id='IdentityStatus' />-->
+						<span id='IdentityStatus' class="form-show">如：2020-5-1</span>
+					</div>
+					<div class="form-group2 clearfix">
+						<div class="form-group2 ">
+							<div class="groupweizhi clearfix">
+								<div class="form-left">
+									<img src="img/authident04.png" class="unload" />
+									<input type="file" name="" capture="camera" accept="image/*" id="indexside" value="" class="unloadinput"/>
+									<p>身份证照（人像面）</p>
+									<div id="imgBox"></div>
+								</div>
+								<div class="form-right">
+									<img src="img/authident01.png" / class="">
+									<p>照片示范</p>
+								</div>
+							</div>
+						</div>
+						<div class="form-group2 clearfix">
+							<p class="form-laber2">身份证号</p>
+							<input type="text" maxlength="18" placeholder='请输入您的身份证号码' class="form-input2" id='IdCard'/>
+						</div>
+						<div class="form-group2 ">
+							<div class="groupweizhi clearfix">
+								<div class="form-left">
+									<img src="img/authident04.png" class="unload" />
+									<input type="file" name="" capture="camera" accept="image/*" id="otherside" value="" class="unloadinput"/>
+									<p>身份证照（国徽面）</p>
+									<div id="imgBox2"></div>
+								</div>
+								<div class="form-right">
+									<img src="img/authident02.png" / class="">
+									<p>照片示范</p>
+								</div>
+							</div>
+						</div>
+						<div class="form-group2 " style="display: none;">
+							<div class="groupweizhi clearfix">
+								<div class="form-left">
+									<img src="img/authident04.png" class="unload" />
+									<input type="file" name="" id="" value="" class="unloadinput"/>
+									<p>人脸识别</p>
+								</div>
+								<div class="form-right">
+									<img src="img/authident03.png" / class="">
+									<p>识别示范</p>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+				</form>
+				<p class="page-button">下一步</p>
+					<div class="footer">
+						<p class="tips">温馨提示</p>
+						<p>1、拍摄身份证照片务必区分人相面、国徽面</p>
+						<p>2、身份证照片需本人、清晰且完整</p>	
+					</div>
+			</div>
+		</div>
+		<script src='js/lib/utils.js'></script>
+		<script src='js/lib/ajax.js'></script>
+		<script src="js/lib/iscroll.js"></script>
+		<script src="js/lib/iosSelect.js"></script>
+		<script src='js/page/authident.js'></script>
+		<script src="js/lib/jquery-1.11.1.min.js"></script>
+		<script src="js/dist/html5ImgCompress.min.js"></script>
+		<script src="js/lib/Validform_v5.3.2_min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var ALERT = function(msg){
+					util.toast(msg)
+				}
+				var fm = $('form').Validform({
+						tiptype:function(msg,o){
+								if(o.type == 3){
+										ALERT(msg)
+								}
+						},
+						datatype:{
+								"zh1-6":/^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/,
+						},
+				});
+				fm.addRule([
+						{
+							ele:"input[name='name']",
+							datatype:"zh2-4"
+						}
+				])
+		})
+		</script>
+	</body>
+</html>

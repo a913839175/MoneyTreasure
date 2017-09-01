@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>签约信息</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="签约信息" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/signinfo.css" />	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-header clearfix">
+						<a href="javascript:history.go(-1);" class="page-back"></a>
+						<p class="page-title">签约信息</p>
+				</div>
+				<div class="page-form">
+					<!-- <div class="form-weizhi">
+						<div class="form-group clearfix">
+							<p class="form-laber">小额借款合同（星点贷）</p>					
+							<a href="#" class="auth_img02"></a>
+							<p class="form-zt qy_msg">未签约</p>
+						</div>
+					</div> -->
+				</div>
+				<p class="page-button">立即签约</p>	
+			</div>
+		</div>
+		<script src="js/lib/utils.js"></script>
+		<script src="js/lib/ajax.js"></script>
+		<script>
+				$(function(){
+					  var opts = {
+								url: '/product/sign_list',
+								data:{
+										status:getQueryString("status"),
+										contractid:getQueryString("contractid")
+								},
+								success: function(res){
+										if(res.code == 1){
+											  var data = res.data;
+												for(var i=0;i<data.length;i++){
+														var name = data[i].name;
+														var status = data[i].issign;
+														if(status == 1){
+																$(".qy_msg").html("已签约");
+																$(".page-button").css("display","none");
+														}else{
+																$(".qy_msg").html("未签约");
+														}
+														var html = "<div class=\"form-weizhi\"><div class=\"form-group clearfix\"><p class=\"form-laber\">";
+														html += name + "</p><a href=\"#\" class=\"auth_img02\"></a><p class=\"form-zt qy_msg\"></p></div>";
+														$(".page-form").append(html);
+														$(".form-weizhi").on('click',function(){
+																window.location.href = 'signcontract.html';
+														})
+												}
+										}
+								}
+						}
+						sendRequest('post',opts);
+						$(".page-button").on('click',function(){
+								window.location.href = 'pensigner.html';
+						})
+
+						// // 获取地址栏参数
+						function getQueryString(name) {
+								var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+								var r = window.location.search.substr(1).match(reg);
+								if (r != null) {
+										return unescape(r[2]);
+								}
+								return null;
+						}
+
+				})
+				
+		</script>
+	</body>
+</html>

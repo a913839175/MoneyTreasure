@@ -1,0 +1,126 @@
+/**
+ * 待还记录css样式
+ */
+.warpper {
+  background: #f6f6f6;
+}
+.page-header {
+  width: 100%;
+  height: 0.9rem;
+  background: #fff;
+}
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.29rem;
+  color: #656566;
+  line-height: 0.94rem;
+  float: left;
+}
+.page-header .page-submit {
+  width: 1.24rem;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  text-align: center;
+  font-size: 0.28rem;
+  float: right;
+  background: #5897f6;
+  color: #fff;
+  margin: 0.18rem 0.54rem 0.18rem 0;
+  border-radius: 0.05rem;
+  cursor: pointer;
+}
+.page-tab {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+.page-tab .tab-list {
+  width: 50%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  float: left;
+  text-align: center;
+  color: #676768;
+  border-top: 0.04rem solid #ededed;
+  border-bottom: 1px solid #dadada;
+  font-size: 0.28rem;
+}
+.page-tab .tab-list.active {
+  background: #fe8e3a;
+  color: #fff;
+  border-top: 0.04rem solid #fe8e3a;
+  border-bottom: 1px solid #fe8e3a;
+}
+.page-list {
+  width: 100%;
+}
+.page-list .list-item {
+  width: 6.4rem;
+  height: 1.7rem;
+  padding: 0 0.55rem;
+  overflow: hidden;
+  margin-bottom: 0.2rem;
+  background: #fff;
+}
+.page-list .list-item .list-img {
+  width: 0.73rem;
+  height: 0.73rem;
+  margin-right: 0.2rem;
+  margin-top: 0.48rem;
+  float: left;
+}
+.page-list .list-item .list-img img {
+  width: 100%;
+  height: 100%;
+}
+.page-list .list-item .list-info {
+  height: 0.9rem;
+  float: left;
+  margin-top: 0.4rem;
+}
+.page-list .list-item .list-info .list-amount {
+  font-size: 0.3rem;
+  color: #656566;
+  font-weight: bold;
+}
+.page-list .list-item .list-info .list-time {
+  font-size: 0.24rem;
+  margin-top: 0.08rem;
+  color: #9b9b9b;
+  margin-left: 0.05rem;
+}
+.page-list .list-item .list-info .list-time em {
+  font-style: normal;
+  padding-left: 0.1rem;
+  font-size: 0.24rem;
+  font-weight: 400;
+}
+.page-list .list-item .list-status {
+  height: 1.7rem;
+  line-height: 1.7rem;
+  float: right;
+  font-size: 0.26rem;
+  color: #656566;
+}
+.page-list .list-item .list-status.yellow {
+  color: #FFAC4A;
+}
+.page-list .list-item .list-status.red {
+  color: #fe0e0e;
+}
+.page-list .list-item .list-icon {
+  width: 0.14rem;
+  height: 0.22rem;
+  display: block;
+  background: url(../img/authcenter02.png) no-repeat;
+  background-size: 100%;
+  float: right;
+  margin: 0.75rem 0 0 0.1rem;
+}

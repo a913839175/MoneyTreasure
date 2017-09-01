@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>银行卡列表</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="银行卡列表" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/jquery-1.11.1.min.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/banklist.css" />	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-header clearfix">
+					<a href="javascript:history.go(-1);" class="page-back"></a>
+					<p class="page-title">银行卡信息</p >
+					<p class="page-submit">管理</p>
+				</div>
+				<ul class="banklistul">
+					<!-- <li class="banklist clearfix">
+						<img src="img/banklist01.png" class="banklistimg1"/>
+						<div class="banklistmsz">
+							<p class="banklistms02">中国建设银行</p>
+							<p class="banklistms03">账户：6227************3748</p>
+						</div>
+						<p class="gouxuan activebank"></p>
+					</li> -->
+				</ul>
+				<a href="addbank.html" class="bankadd">
+					<div class="bankaddweizhi">
+						<img src="img/banklist02.png" class="bankaddimg01" />
+						<p class="bankaddwz1">添加银行卡</p>	
+					</div>
+				</a>
+				<p class="page-button">立即借款</p>
+			</div>
+			<div class="tcdelz">
+				<div class="tcdel">
+					<div class="title">
+						<div class="tcdelwz clearfix">
+							<img src="img/banklist04.jpg" class="txdelimg01" />
+							<p class="txdelp01">确认删除该银行卡吗？</p>
+						</div>
+					</div>
+					<div class="title redwz">确定删除</div>
+					<div class="title hswz">取消</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/lib/ajax.js"></script>
+		<script src="js/lib/utils.js"></script>
+		<script src="js/page/banklists.js"></script>
+	</body>
+</html>
+

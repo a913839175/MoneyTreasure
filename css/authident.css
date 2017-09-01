@@ -1,0 +1,214 @@
+/**
+ * 身份验证css样式
+ */
+.warpper {
+  height: auto;
+}
+.page-header {
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 0.04rem solid #ededed;
+}
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.29rem;
+  color: #656566;
+  line-height: 0.94rem;
+  float: left;
+}
+.page-header .page-submit {
+  width: 1.24rem;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  text-align: center;
+  font-size: 0.28rem;
+  float: right;
+  color: #656566;
+  margin: 0.18rem 0.54rem 0.18rem 0;
+  border-radius: 0.05rem;
+  cursor: pointer;
+}
+.page-form {
+  width: 7.5rem;
+}
+.page-form .form-group {
+  width: 6.52rem;
+  padding: 0.22rem 0.4rem;
+  border-bottom: 0.02rem solid #dddddd;
+  margin-left: 0.18rem;
+}
+.page-form .form-group .form-laber {
+  float: left;
+  height: 0.6rem;
+  line-height: 0.64rem;
+  font-size: 0.28rem;
+  width: 2rem;
+}
+.page-form .form-group .form-input {
+  float: left;
+  border: none;
+  outline: none;
+  height: 0.64rem;
+  overflow: hidden;
+  display: block;
+  font-size: 0.28rem;
+}
+.page-form .form-group .form-show {
+  max-width: 4rem;
+  height: 0.6rem;
+  line-height: 0.64rem;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  font-size: 0.3rem;
+  color: #757575;
+}
+.page-form .form-group2 {
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+}
+.page-form .form-group2 .groupweizhi {
+  padding: 0.2rem 0.53rem 0.21rem 0.54rem;
+}
+.page-form .form-group2 .groupweizhi .form-left {
+  float: left;
+  position: relative;
+}
+.page-form .form-group2 .groupweizhi .form-left .unload {
+  width: 2.77rem;
+  height: 1.73rem;
+  z-index: 9;
+}
+.page-form .form-group2 .groupweizhi .form-left .unloadinput {
+  width: 2.77rem;
+  height: 1.73rem;
+  position: absolute;
+  top: 0;
+  z-index: 12;
+  opacity: 0;
+}
+.page-form .form-group2 .groupweizhi .form-left p {
+  text-align: center;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  padding-top: 0.3rem;
+}
+.page-form .form-group2 .groupweizhi .form-right {
+  float: right;
+  display: block;
+  width: 2.77rem;
+}
+.page-form .form-group2 .groupweizhi .form-right img {
+  width: 2.77rem;
+  height: 1.73rem;
+}
+.page-form .form-group2 .groupweizhi .form-right p {
+  text-align: center;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  padding-top: 0.3rem;
+}
+.auth_div04 {
+  width: 6.74rem;
+  height: 1rem;
+  border: 0.02rem solid #bbbbbb;
+  font-size: 0.28rem;
+  line-height: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.9rem;
+}
+.auth_div05 {
+  font-size: 0.28rem;
+  text-align: center;
+  margin-top: 0.9rem;
+  margin-bottom: 0.54rem;
+}
+.auth_div06 {
+  font-size: 0.28rem;
+  margin-left: 0.4rem;
+}
+.marb66 {
+  margin-bottom: 0.66rem;
+}
+.mart76 {
+  width: 1.4rem;
+  margin-top: 0.76rem;
+}
+.form-laber2 {
+  width: 100%;
+  text-align: center;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.28rem;
+}
+.form-input2 {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 0.6rem;
+  overflow: hidden;
+  display: block;
+  font-size: 0.28rem;
+  text-align: center;
+}
+.page-button {
+  width: 6.44rem;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  background: #ff913d;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  color: #9b9b9b;
+  text-align: center;
+  margin-top: 0.36rem;
+  margin-bottom: 0.5rem;
+}
+.footer .tips {
+  margin-bottom: 0.1rem;
+}
+.footer p {
+  height: 0.34rem;
+  line-height: 0.34rem;
+  font-size: 0.22rem;
+}
+
+
+#imgBox2,
+#imgBox
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 2.77rem;
+  height: 1.73rem;
+  overflow: hidden;
+}
+#imgBox2 img,
+#imgBox img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}

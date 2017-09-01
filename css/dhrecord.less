@@ -1,0 +1,133 @@
+/**
+ * 待还记录css样式
+ */
+@bili:100rem;
+
+.warpper{
+    background: #f6f6f6;
+}
+.container{
+    
+}
+.page-header{
+    width: 100%;
+    height: 90/@bili;
+    background: #fff;
+    .page-back{
+        width: 13/@bili;
+        height: 21/@bili;
+        display: block;
+        background: url(../img/page_back.png) no-repeat;
+        background-size: 100%;
+        float: left;
+        margin: 35/@bili 10/@bili 0 54/@bili;
+    }
+    .page-title{
+        font-size: 29/@bili;
+        color: #656566;
+        line-height: 94/@bili;
+        float: left;
+    }
+    .page-submit{
+        width: 124/@bili;
+        height: 54/@bili;
+        line-height: 54/@bili;
+        text-align: center;
+        font-size: 28/@bili;
+        float: right;
+        background: #5897f6;
+        color: #fff;
+        margin: 18/@bili 54/@bili 18/@bili 0;
+        border-radius: 5/@bili;
+        cursor: pointer;      
+    }  
+}
+.page-tab{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    .tab-list{
+        width: 50%;
+        height: 80/@bili;
+        line-height: 80/@bili;
+        float: left;
+        text-align: center;
+        color: #676768;
+        border-top: 4/@bili solid #ededed;
+        border-bottom: 1px solid #dadada;
+        font-size: 28/@bili;
+        &.active{
+           background: #fe8e3a;
+           color: #fff;
+           border-top:4/@bili solid #fe8e3a;
+           border-bottom: 1px solid #fe8e3a;
+        }
+    }
+    
+}
+.page-list{
+    width: 100%;  
+    .list-item{
+        width: 640/@bili;
+        height: 170/@bili;
+        padding: 0 55/@bili;
+        overflow: hidden;
+        margin-bottom: 20/@bili;
+        background: #fff;
+        .list-img{
+            width: 73/@bili;
+            height: 73/@bili;
+            margin-right: 20/@bili;
+            margin-top: 48/@bili;
+            float: left;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .list-info{
+            height: 90/@bili;
+            float: left;
+            margin-top: 40/@bili;
+            .list-amount{
+                font-size: 30/@bili;
+                color: #656566;
+                font-weight: bold;
+            }
+            .list-time{
+                font-size: 24/@bili;
+                margin-top: 8/@bili;
+                color: #9b9b9b;
+                margin-left: 5/@bili;
+                em{
+                    font-style: normal;
+                    padding-left: 10/@bili;
+                    font-size: 24/@bili;
+                    font-weight:400;
+                }
+            }
+        }
+        .list-status{
+            height: 170/@bili;
+            line-height: 170/@bili;
+            float: right;
+            font-size: 26/@bili;
+            color: #656566;
+        }
+        .list-status.yellow{
+            color: #FFAC4A;
+        }
+        .list-status.red{
+            color: #fe0e0e;
+        }
+        .list-icon{
+            width: 14/@bili;
+            height: 22/@bili;
+            display: block;
+            background: url(../img/authcenter02.png) no-repeat;
+            background-size: 100%;
+            float: right;
+            margin: 75/@bili 0 0 10/@bili;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>签名板</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="签名板" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/libs/jquery.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/pensigner.css" />
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/libs/flashcanvas.js"></script>
+		<![endif]-->	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-header clearfix">
+					<a href="javascript:history.go(-1);" class="page-back"></a>
+					<p class="page-title">签名确认</p >
+					<p class="page-submit" id="reset">重签</p>
+				</div>
+				<div class="page-main">
+					<div class="page-banner">
+						<p>请客户用手指在此签名</p>
+					</div>
+					<div class="page-board">
+						<div id="content">
+							<div id="signatureparent">
+								<div id="signature"></div>
+							</div>
+							<div id="tools"></div>
+
+						</div>
+					</div>
+					<div class="page-agree">
+						<input type="checkbox" id="checked" checked="chekcked" />
+						<label for="checked">我已阅读并同意以上条款</label>
+					</div>
+					<button class="page-button" id="jSignatureSubmit" >确认</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/libs/modernizr.js"></script>
+		<script src="js/libs/jSignature.min.noconflict.js"></script>
+		<script src="js/page/pensigner.js"></script>
+		<script src="js/lib/utils.js"></script>
+		<script src="js/lib/ajax.js"></script>
+	</body>
+</html>
+
+
+

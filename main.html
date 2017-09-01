@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>星融h5-主页</title>
+	    <meta name="apple-touch-fullscreen" content="yes" />
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+	    <meta content="telephone=no" name="format-detection" /> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <meta name="keywords" content="星融h5" />
+	    <meta name="mobiletitle" content="星融h5-主页" />
+		<script src="js/lib/zepto_1.1.3.js"></script>
+		<script src="js/lib/rem.js"></script>
+		<link rel="stylesheet" href="css/m-base.css" />
+		<link rel="stylesheet" href="css/main.css" />	
+	</head>
+	<body>
+		<div class="warpper">
+			<div class="container">
+				<div class="page-logo">
+					<!--banner图-->
+					<img src="img/mainbanner01.jpg" class="main_banner"/>
+					<!--功能点-->
+					<ul class="point_ul clearfix">
+						<a href="progressCheck.html"><li class="point_li ">
+							<img src="img/main01.png" class="point_img01">
+							<p class="point_ms01">进度查询</p>
+						</li></a>
+						<a href="dhrecord.html"><li class="point_li ">
+							<img src="img/main02.png" class="point_img01">
+							<p class="point_ms01">还款详情</p>
+						</li></a>
+						<a href="personcenter.html"><li class="point_li">
+							<img src="img/main03.png" class="point_img01">
+							<p class="point_ms01">个人中心</p>
+						</li></a>
+					</ul>
+					<div class="main-box">
+							<!-- <div class="mian_wz">
+								<div class="mian_product clearfix">
+									<img src="img/main04.png" class="product_img01"></img>
+									<div class="product_ms1">
+										<p class="product_ms2">星点贷</p>
+										<p class="product_ms3">0担保 0抵押 纯信用借款</p>
+									</div>
+									<a href="javascript:void(0);" class="product_lj01">
+										<img src="img/main05.png" class="product_img02"></img>
+									</a>
+								</div>
+							</div> -->
+							<!-- <div class="mian_wz">
+								<div class="mian_product clearfix">
+									<img src="img/main04.png" class="product_img01"></img>
+									<div class="product_ms1">
+										<p class="product_ms2">星点贷</p>
+										<p class="product_ms3">0担保 0抵押 纯信用借款</p>
+									</div>
+									<a href="" class="product_lj01">
+										<img src="img/main05.png" class="product_img02"></img>
+									</a>
+								</div>
+							</div> -->
+					</div>
+					<div class="end clearfix">
+						<div class="endwz">
+							<p class="xian"></p>
+							<p class="endms">简单便捷的线上借款</p>
+							<p class="xian"></p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<script src="js/lib/utils.js"></script>
+		<script src="js/lib/ajax.js"></script>
+		<script>
+				$(function(){
+					//向后台发送处理数据  
+					var bannerImg = {
+							url:'/public/carouselpic',
+							success: function(res){
+								if(res.code == 1 ){
+									var imgSrc = res.data.pic1;
+									$(".main_banner").attr('src',imgSrc);
+								}
+							}
+					};
+					sendRequest('post',bannerImg);
+					var productList = {
+							url:'/product/index',
+							success: function(res){
+								// alert(123);
+								if(res.code ==  1 ){
+									// alert(123);
+									var data = res.data;
+									for(var i=0;i<data.length;i++){
+										var htmlmsg = data[i].product_name;
+										// console.log(htmlmsg);
+										var id = data[i].id;
+										var html = "<div class=\"mian_wz\"><div class=\"mian_product clearfix\"><img src=\"img/main04.png\" class=\"product_img01\"></img><div class=\"product_ms1\"><p class=\"product_ms2\">";
+										html += htmlmsg + "</p><p class=\"product_ms3\">0担保 0抵押 纯信用借款</p></div><a href=\"javascript:void(0);\" class=\"product_lj01\"><img src=\"img/main05.png\" class=\"product_img02\"></img></a></div></div>";
+										$(".product_ms2").html(htmlmsg);
+										$(".main-box").append(html);
+										$(".mian_wz").on('click',function(){
+												window.location.href="borrowmain.html?id=" + id;
+										})
+									}
+								}
+							}
+					};
+					sendRequest('post',productList);
+				})
+		</script>
+	</body>
+</html>

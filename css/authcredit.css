@@ -1,0 +1,259 @@
+/**
+ * 信用认证css样式
+ */
+.warpper {
+  background: #fff;
+  height: auto;
+}
+.page-logo {
+  width: 100%;
+}
+.bormo_banner {
+  width: 100%;
+  height: 2.71rem;
+  background-size: 100%;
+}
+.main_banner {
+  width: 100%;
+  height: 2.7rem;
+  background-size: 100%;
+  overflow: hidden;
+}
+.bormo_jine {
+  padding-left: 0.38rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  color: #000000;
+}
+.page-header {
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 2px solid #ededed;
+  background: #fff;
+}
+.page-header .page-back {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  background: url(../img/back_icon.png) no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.page-header .page-title {
+  font-size: 0.29rem;
+  color: #656566;
+  line-height: 0.94rem;
+  float: left;
+}
+.credit_banner {
+  width: 100%;
+  height: 3.2rem;
+  background-size: 100%;
+  overflow: hidden;
+}
+.credit_ms1 {
+  width: 100%;
+  font-size: 0.28rem;
+  height: 0.66rem;
+  padding-left: 0.4rem;
+  border-bottom: 0.02rem solid #bbbbbb;
+}
+.credit_div2 {
+  width: 100%;
+  border-bottom: 0.01rem solid #bbbbbb;
+}
+.credit_img01 {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  margin: 0 auto;
+}
+.credit_ms2 {
+  text-align: center;
+  margin-bottom: 0.18rem;
+}
+.credit_div3 {
+  width: 100%;
+  height: 2rem;
+}
+.credit_div4 {
+  width: 49.2%;
+  height: 2rem;
+  float: left;
+  border: 0.02rem solid #bbbbbb;
+}
+.credit_div5 {
+  width: 49.5%;
+  height: 2rem;
+  float: left;
+  border: 0.02rem solid #bbbbbb;
+}
+.pat30 {
+  padding-top: 0.3rem;
+}
+.auth_div04 {
+  width: 6.74rem;
+  height: 1rem;
+  border: 0.02rem solid #bbbbbb;
+  font-size: 0.28rem;
+  line-height: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.9rem;
+}
+.maincredit {
+  width: 100%;
+  background: #fff;
+}
+.clad {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #dddddd;
+  background: #f6f6f6;
+  height: 0.65rem;
+  line-height: 0.65rem;
+}
+.clad .cladimg1 {
+  width: 0.4rem;
+  height: 0.45rem;
+  display: block;
+  float: left;
+}
+.clad .cladms1 {
+  float: left;
+  font-size: 0.27rem;
+  color: #676768;
+  padding-left: 0.5rem;
+}
+.cladtb-ul {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #dddddd;
+  height: 2.4rem;
+}
+.cladtb-ul .cladtb-li {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  padding-top: 0.47rem;
+}
+.cladtb-ul .cladtb-li .cladactive,
+.cladtb-li2 .cladactive {
+  background-position: 0 -1rem !important;
+}
+.cladtb-ul .cladtb-li .cladtb-liimg0 {
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/authcredit01.png) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.cladtb-ul .cladtb-li .cladtb-liimg1 {
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/authcredit02.png) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.cladtb-ul .cladtb-li .cladtb-liimg2 {
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/authcredit03.png) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.cladtb-ul .cladtb-li .cladtb-msz {
+  font-size: 0.27rem;
+  color: #676768;
+  padding-top: 0.11rem;
+}
+.mat16 {
+  margin-top: 0.16rem;
+}
+.kongjian16 {
+  width: 100%;
+  height: 0.16rem;
+  background: #f2f2f5;
+}
+.cladtb-ul2 {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #dddddd;
+  height: 2.4rem;
+}
+.cladtb-ul2 .cladtb-li2 {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  padding-top: 0.47rem;
+}
+.cladtb-ul2 .cladtb-li2 .cladtb-liimg3 {
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/authcredit04.png) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.cladtb-ul2 .cladtb-li2 .cladtb-liimg4 {
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/authcredit05.png) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.cladtb-ul2 .cladtb-li2 .cladtb-liimg5 {
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/authcredit06.png) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.cladtb-ul2 .cladtb-li2 .cladtb-liimg6 {
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/authcredit07.png) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+.cladtb-ul2 .cladtb-li2 .cladtb-msz {
+  font-size: 0.27rem;
+  color: #676768;
+  padding-top: 0.11rem;
+}
+.xian {
+  width: 6.73rem;
+  margin: 0 auto;
+  height: 1px;
+  background: #dddddd;
+  clear: both;
+}
+.page-button {
+  width: 6.44rem;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  /* background: #dcdcdc; */
+  background: #fe8e3a;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  cursor: pointer;
+  margin-bottom: 0.44rem;
+}
+.footer {
+  width: 100%;
+  color: #9b9b9b;
+  text-align: center;
+  margin-top: 0.36rem;
+  margin-bottom: 0.5rem;
+}
+.footer .tips {
+  margin-bottom: 0.1rem;
+}
+.footer p {
+  height: 0.34rem;
+  line-height: 0.34rem;
+  font-size: 0.22rem;
+}
